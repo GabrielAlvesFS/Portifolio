@@ -17,13 +17,15 @@ ul, li, a{
     text-decoration: none;
 }
 
-/* Colors */
+/* Var's */
 :root{
     --bg-dark: #212226;
     --light: #FFFFFF;
     --purple: #5280E2;
     --green: #15CDCB;
     --light-grey: #E0DEDE;
+
+    --menu-height: 90px;
 }
 
 /* Body */
@@ -95,7 +97,8 @@ nav{
     align-items: center;
     justify-content: space-between;
 
-    height: 90px;
+    width: 100%;
+    height: var(--menu-height);
     background-color: var(--bg-dark);
     padding: 2rem 6rem;
     position: sticky;
@@ -114,8 +117,11 @@ nav .name-container p{
 }
 
 nav .nav-container{
+    width: 80%;
     display: flex;
-    gap: 6rem;
+    justify-content: space-between;
+    border: 1px solid red;
+   
 }
 
 nav .nav-container a{
