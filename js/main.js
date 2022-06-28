@@ -11,7 +11,7 @@ hamburgerMenu.addEventListener('click', () => {
    else {
       nav.style.display = "flex"
    }
-}) gi
+})
 
 //hide the menu when the item is clicked
 navItem.forEach((item)=>{
