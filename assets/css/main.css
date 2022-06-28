@@ -12,6 +12,11 @@ body, button, input, select, textarea {
     font-family: 'Poppins', sans-serif;
 }
 
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
 /* Colors */
 :root{
     --bg-dark: #212226;
@@ -61,7 +66,7 @@ button {
 /* Header */
 header{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     display: flex;
     align-items: center;
 }
@@ -69,7 +74,7 @@ header{
 header .about-container{
     width: 50%;
     height: fit-content;
-    margin-left: 100px;
+    padding-left: 100px;
 }
 
 header h2{
@@ -82,4 +87,40 @@ header h1{
 
 header p{
     margin-bottom: 2.5rem;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 90px;
+    background-color: var(--bg-dark);
+    padding: 2rem 6rem;
+    position: sticky;
+    top: 0;
+}
+
+nav .name-container{
+    border-left: 4px solid var(--purple);
+    padding-left: .6rem;
+}
+
+nav .name-container p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+nav .nav-container{
+    display: flex;
+    gap: 6rem;
+}
+
+nav .nav-container a{
+    color: var(--green);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
