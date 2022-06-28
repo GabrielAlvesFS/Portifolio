@@ -117,11 +117,9 @@ nav .name-container p{
 }
 
 nav .nav-container{
-    width: 80%;
+    width: 75%;
     display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
-   
+    justify-content: space-around;
 }
 
 nav .nav-container a{
@@ -129,4 +127,17 @@ nav .nav-container a{
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+nav .menu-hidden{
+    display: none;
+    flex-direction: column;
+    gap: .6rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+nav .menu-hidden div{
+    border-bottom: 2px solid var(--purple);
+    width: 40px;
 }
