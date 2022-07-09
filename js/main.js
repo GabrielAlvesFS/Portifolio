@@ -1,21 +1,23 @@
-let hamburgerMenu = document.getElementsByClassName('menu-hidden')[0]
-let nav = document.getElementsByClassName('nav-container')[0]
+let hamburgerMenu = document.querySelector('.menu-hidden')
 let navItem = document.querySelectorAll('.nav-item')
 
-
 //Show and Hide the menu hamburger
-hamburgerMenu.addEventListener('click', () => {
-   if (nav.style.display == "flex") {
-    nav.style.display = "none"
-   } 
-   else {
-      nav.style.display = "flex"
-   }
+hamburgerMenu.addEventListener('click', ()=> {
+    navItem.forEach( (item) => {
+        if (item.classList.contains('active')) {
+            item.classList.remove('active')
+        }
+        else {
+            item.classList.add('active')
+        }
+    })
 })
 
-//hide the menu when the item is clicked
-navItem.forEach((item)=>{
-    item.addEventListener('click', ()=>{
-        nav.style.display = "none"
+//hide menu when any item is clicked
+navItem.forEach( (item) => {
+    item.addEventListener('click', () => {
+        navItem.forEach( (allItems) => { 
+            allItems.classList.remove('active')
+        })
     })
 })
