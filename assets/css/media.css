@@ -1,34 +1,49 @@
 
 /* Small Screens 769px - 1024px */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    nav .menu-hidden{
-        display: flex;
-    }
-    
+@media screen  and (max-width: 1024px) {
     nav .nav-container{
-        width: 40%;
-        padding: .5rem;
+        width: 100%;
         
-        display: none;
         flex-direction: column;
         align-items: center;
-        gap: .6rem;
 
         position: absolute;
         top: 90px;
-        right: 10%;
-
+        left: 0;
         background-color: var(--bg-dark);
-        border: 1px solid var(--purple);
+    }
+
+    nav .nav-item{
+        padding-bottom: 1rem;
+        display: none;
+    }
+
+    nav .nav-item.active{
+        display: block;
+    }
+
+    nav .menu-hidden{
+        display: flex;
     }
 }
 
 /* iPads, tablets - 481px - 768px */
 @media screen and (min-width: 481px) and (max-width: 768px){
 
+    header .about-container{
+        width: 100%;
+        padding: 0 70px 0 100px;
+    }
 }
 
 /* Mobile Devices - ?? - 480px*/
 @media screen and (max-width: 480px){
+    header .about-container{
+        width: 100%;
+        padding: 0 40px;
+    }
 
+    nav {
+        padding: 2.2rem; 
+    }
 }
