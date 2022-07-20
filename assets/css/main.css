@@ -141,3 +141,55 @@ nav .menu-hidden div{
     border-bottom: 2px solid var(--purple);
     width: 40px;
 }
+
+/* About Me */
+.aboutme-container {
+    width: 100%;
+    height: fit-content;
+    padding: 100px;
+    margin-top: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutme-container .aboutme {
+    width: 48%;
+}
+
+.aboutme-container .aboutme h1{
+    margin-bottom: 2.125rem;
+}
+
+.aboutme-container .aboutme p{
+    margin-bottom: 2rem;
+}
+
+.aboutme-container figure{
+    width: 425px;
+    height: 431px;
+    border: 1px solid var(--purple);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.aboutme-container figure::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 425px;
+    height: 431px;
+    transform: rotate(-4deg);
+    border: 1px solid var(--green);
+}
+
+.aboutme-container figure .my-picture{
+    width: 381px;
+    height: 382px;
+}
