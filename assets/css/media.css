@@ -1,6 +1,7 @@
 
 /* Small Screens 769px - 1024px */
 @media screen  and (max-width: 1024px) {
+    /* Nav */
     nav .nav-container{
         width: 100%;
         
@@ -25,25 +26,61 @@
     nav .menu-hidden{
         display: flex;
     }
+
+    /* About Me */
+    .aboutme-container{
+        flex-direction: column;
+    }
+
+    .aboutme-container .aboutme {
+        width: 100%;
+    }
 }
 
 /* iPads, tablets - 481px - 768px */
 @media screen and (min-width: 481px) and (max-width: 768px){
-
+    /* Header */
     header .about-container{
         width: 100%;
         padding: 0 70px 0 100px;
+    }
+
+    /* About Me */
+    .aboutme-container{
+        padding: 80px;
     }
 }
 
 /* Mobile Devices - ?? - 480px*/
 @media screen and (max-width: 480px){
+    /* Header */
     header .about-container{
         width: 100%;
         padding: 0 40px;
     }
 
+    /* Nav */
     nav {
         padding: 2.2rem; 
+    }
+
+    /* About Me */
+    .aboutme-container{
+        padding: 35px;
+    }
+
+    .aboutme-container figure{
+        width: 375px;
+        height: 381px;
+    }
+
+    .aboutme-container figure::before{
+        width: 375px;
+        height: 381px;
+    }
+
+    .aboutme-container figure .my-picture{
+        width: 331px;
+        height: 332px;
     }
 }
